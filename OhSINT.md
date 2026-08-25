@@ -1,4 +1,4 @@
-# OhSINT 
+# OhSINT  (Pt- Br)
 Feito por: Maria Julia Souza  
 Categoria: OSINT  Site: tryhackme.com   
 Link: https://tryhackme.com/room/ohsint
