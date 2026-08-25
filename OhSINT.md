@@ -5,16 +5,19 @@ Link: https://tryhackme.com/room/ohsint
 
 ## Introdução
 O desafio apresentado é  descobrir o máximo de informações possível utilizando somente uma imagem do Windows XP.
+![GoogleXp](https://github.com/Maju22p/write-ups/blob/main/Write%20up%20(POR)/imagens/googlexp-OhSINT1.png)   
+
 Para facilitar o processo, utilizei a máquina virtual disponibilizada pelo próprio site; porém, dentro da room também é possível baixar a 
 imagem para realizar a investigação localmente. A imagem do desafio na máquina do tryhack pode ser encontrada em `/Rooms/OhSint`.
+![Diretorio](https://github.com/Maju22p/write-ups/blob/main/Write%20up%20(POR)/imagens/OhSINT2.png)
 
-![GoogleXp](https://github.com/Maju22p/write-ups/blob/main/Write%20up%20(POR)/imagens/googlexp-OhSINT1.png)   
 
 ### Inicio das Investigações
 
 Como o desafio menciona uma imagem, o primeiro passo natural é verificar se ela contém metadados EXIF (informações que contêm data, horário, autor, GPS etc.). 
 Então abri o diretório pelo terminal usando o comando  `cd Rooms/OhSINT` para encontrar onde a imagem estava localizada. 
 Após isso usei da ferramenta exiftool (uma ferramenta específica para leitura, escrita e edição de metadados), o que me possibilitou ler as informações EXIF da imagem
+![exiftool](https://github.com/Maju22p/write-ups/blob/main/Write%20up%20(POR)/imagens/OhSINT3.png)  
 
 ```
 Copyright                     : OWoodflint  
