@@ -8,6 +8,8 @@ O desafio apresentado é  descobrir o máximo de informações possível utiliza
 Para facilitar o processo, utilizei a máquina virtual disponibilizada pelo próprio site; porém, dentro da room também é possível baixar a 
 imagem para realizar a investigação localmente. A imagem do desafio na máquina do tryhack pode ser encontrada em `/Rooms/OhSint`.
 
+![GoogleXp](https://github.com/Maju22p/write-ups/blob/main/Write%20up%20(POR)/imagens/googlexp-OhSINT1.png)   
+
 ### Inicio das Investigações
 
 Como o desafio menciona uma imagem, o primeiro passo natural é verificar se ela contém metadados EXIF (informações que contêm data, horário, autor, GPS etc.). 
