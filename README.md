@@ -3,6 +3,6 @@
 ## TryHackMe
 |  Titulo     | Categorias  |  Progresso | Link |
 | ----------- | ----------- | -----------| ---- |
-| OhSINT    | OSINT     | finalizado    | Dado 2 |
+| OhSINT    | OSINT     | finalizado    | OhSINT.md |
 | Dado 3      | Dado 4      | Dado 1    | Dado 2 | 
 
