@@ -44,39 +44,44 @@ Ao encontrar o perfil do X do usuário, podemos responder às perguntas solicita
 Tradução: _Do que é o avatar desse usuário?_
  Ao investigar o perfil do usuário no X, encontramos sua foto de perfil na qual é um gato  
 
- ![gato do perfil](https://github.com/Maju22p/write-ups/blob/main/Write%20up%20(POR)/imagens/OhSINT6.png)
-
 **Resposta:** `cat`
 
 ###What is the SSID of the WAP he connected to? 
-Tradução: _Qual é o SSID do ponto de acesso (WAP) ao qual ele se conectou?  _ 
-Em uma de suas postagens no  X  podemos encontrar o BssiD de sua rede `(B4:5D:50:AA:86:41)` 
+Tradução: _Qual é o SSID do ponto de acesso (WAP) ao qual ele se conectou?_   
 
+Em uma de suas postagens no  X  podemos encontrar o BssiD de sua rede `(B4:5D:50:AA:86:41)`  
+ ![gato do perfil](https://github.com/Maju22p/write-ups/blob/main/Write%20up%20(POR)/imagens/OhSINT6.png)
 
 Inicialmente tentei o basic search do Wigle usando apenas o BSSID, mas não obtive nenhum resultado no site. Após várias tentativas, percebi então que era 
 necessário usar o Advanced Search. Ao utilizar o advanced search da plataforma Wigle 
-(uma plataforma que mapeia e indexa redes wi-fi, Bluetooth e estações de rádio base)  e informar o BSSID, encontrei as seguintes informações : 
+(uma plataforma que mapeia e indexa redes wi-fi, Bluetooth e estações de rádio base)  e informar o BSSID, encontrei as seguintes informações :  
 
+![BSSID](https://github.com/Maju22p/write-ups/blob/main/Write%20up%20(POR)/imagens/OhSINT7.png)  
 
+Onde podemos verificar o nome do  SSID: `UnileverWiFi`.  
 
-Onde podemos verificar o nome do  SSID: `UnileverWiFi`.
 Resposta: `UnileverWiFi`
 
 ###What is his personal email address? 
-Tradução: _Qual é o endereço de e-mail pessoal dele? _
+Tradução: _Qual é o endereço de e-mail pessoal dele?_  
+
 
 Para descobrir a resposta a essa pergunta e às perguntas a seguir, investiguei  o github indicado na busca : https://github.com/OWoodfl1nt/people_finder , onde
 encontrei um repositório chamado `people_finder`. Nesse repositório público pude encontrar  um arquivo *README* que possibilitou adquirir mais informações 
-sobre o usuário, como seu email, seu blog pessoal(o qual iremos explorar adiante) e de onde ele é.
+sobre o usuário, como seu email, seu blog pessoal(o qual iremos explorar adiante) e de onde ele é.  
+
+![GitHub](https://github.com/Maju22p/write-ups/blob/main/Write%20up%20(POR)/imagens/OhSINT8.png)
 
 Resposta: `OWoodflint@gmail.com`  
 
 ### What site did you find his email address on? 
-Tradução: _Em qual site você encontrou o endereço de e-mail dele?_ 
+Tradução: _Em qual site você encontrou o endereço de e-mail dele?_   
+
 Resposta: `Github`
 
 ### What city is this person in? 
-Tradução: _Em qual cidade essa pessoa está?_ 
+Tradução: _Em qual cidade essa pessoa está?_   
+
 Resposta: `London` 
 
 ### Where has he gone on holiday? 
@@ -84,20 +89,22 @@ Tradução: _Para onde ele foi de férias?_
 
 Ao acessar o site encontrado anteriormente no repositório do Github, pude acessar o blog pessoal do usuário. 
 Se nota que é um blog bem simples e a única informação que podemos obter é um texto no qual o próprio informa sobre sua viagem a Nova York.
-Podemos assim, assumir que suas férias foi em Nova York.
+Podemos assim, assumir que suas férias foi em Nova York.  
 
-Resposta: New York
+![Site do usuário](https://github.com/Maju22p/write-ups/blob/main/Write%20up%20(POR)/imagens/OhSINT9.png)
+
+Resposta: `New York`
 
 ### What is the person's password? 
 Tradução: Qual é a senha dessa pessoa? 
 
 Após verificar as funcionalidades do blog, decidi inspecionar o código-fonte. Onde foi possível encontrar um parágrafo branco escrito “pennYDr0pper.! ” 
-no código HTML (talvez uma tentativa de armazenar a senha no site camuflando-a com o fundo). Ao testar a resposta foi confirmada que essa era a senha do usuario
+no código HTML (talvez uma tentativa de armazenar a senha no site camuflando-a com o fundo). Ao testar a resposta foi confirmada que essa era a senha do usuario.  
+![Codigo-fonte](https://github.com/Maju22p/write-ups/blob/main/Write%20up%20(POR)/imagens/OhSINT10.png)
 
+Resposta: `pennYDr0pper.!`
 
-Resposta: pennYDr0pper.!
-
-Conclusão
+## Conclusão
 Esse desafio mostrou como é possível reunir um perfil praticamente completo de uma pessoa a partir de uma única imagem, sem nenhuma técnica de invasão: 
 apenas informações públicas e metadados que a maioria das pessoas nem sabe que existem. A partir de um simples campo de "Copyright" numa foto, 
 foi possível rastrear redes sociais, e-mail, cidade, rede Wi-Fi, senha e até destino de viagem.
