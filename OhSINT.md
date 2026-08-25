@@ -16,7 +16,8 @@ imagem para realizar a investigação localmente. A imagem do desafio na máquin
 
 Como o desafio menciona uma imagem, o primeiro passo natural é verificar se ela contém metadados EXIF (informações que contêm data, horário, autor, GPS etc.). 
 Então abri o diretório pelo terminal usando o comando  `cd Rooms/OhSINT` para encontrar onde a imagem estava localizada. 
-Após isso usei da ferramenta exiftool (uma ferramenta específica para leitura, escrita e edição de metadados), o que me possibilitou ler as informações EXIF da imagem
+Após isso usei da ferramenta exiftool (uma ferramenta específica para leitura, escrita e edição de metadados), o que me possibilitou ler as informações EXIF da imagem  
+
 ![exiftool](https://github.com/Maju22p/write-ups/blob/main/Write%20up%20(POR)/imagens/OhSINT3.png)  
 
 ```
@@ -30,14 +31,20 @@ Para melhor compreensão, acabei cortando os outputs e deixando somente os relev
 padrão que não seriam úteis nesse contexto. 
 
 Ao encontrar o nome do autor (  OWoodflint ), decidi fazer uma simples busca no Google onde encontrei perfis com o mesmo usuário em dois 
-sites: X.com   e github.com (no qual iremos nos aprofundar mais adiante).
+sites: X.com   e github.com (no qual iremos nos aprofundar mais adiante).  
+
+![busca](https://github.com/Maju22p/write-ups/blob/main/Write%20up%20(POR)/imagens/OhSINT4.png) 
 
 
-Ao encontrar o perfil do X do usuário, podemos responder às perguntas solicitadas pela room:
+Ao encontrar o perfil do X do usuário, podemos responder às perguntas solicitadas pela room:  
+![]()
+![perfil x](https://github.com/Maju22p/write-ups/blob/main/Write%20up%20(POR)/imagens/OhSINT5.png)
 
 ### What is this user's avatar of?
 Tradução: _Do que é o avatar desse usuário?_
- Ao investigar o perfil do usuário no X, encontramos sua foto de perfil na qual é um gato
+ Ao investigar o perfil do usuário no X, encontramos sua foto de perfil na qual é um gato  
+
+ ![gato do perfil](https://github.com/Maju22p/write-ups/blob/main/Write%20up%20(POR)/imagens/OhSINT6.png)
 
 **Resposta:** `cat`
 
